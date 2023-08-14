@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ohfr
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-enna-tenant/byoc-app-dpdo/ohfr@sha256:396b34258c02c2e111daf6b79c6fd2a3a12be5f558a6b28309e749e06a6290ec
         name: my-java-quarkus
         ports:
         - containerPort: 8081
