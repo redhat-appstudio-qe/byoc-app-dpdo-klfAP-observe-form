@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ohfr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-enna-tenant/byoc-app-dpdo/ohfr@sha256:396b34258c02c2e111daf6b79c6fd2a3a12be5f558a6b28309e749e06a6290ec
+        name: my-java-quarkus
+        resources: {}
+status: {}
